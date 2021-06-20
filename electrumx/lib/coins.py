@@ -2698,8 +2698,8 @@ class HumanCharityCoin(Coin):
 
 
 
-        @classmethod
-        def header_hash(cls, header):
-            '''Given a header return the hash.'''
-            import quark_hash
-            return quark_hash.getPoWHash(header)
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import quark_hash
+        return quark_hash.getPoWHash(header)
